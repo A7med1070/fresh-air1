@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://freshair-ac.sa/sitemap.xml
