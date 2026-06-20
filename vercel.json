@@ -1,0 +1,68 @@
+{
+  "rewrites": [
+    {
+      "source": "/buy-used-air-conditioners-riyadh",
+      "destination": "/buy-used-air-conditioners-riyadh.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/buy-used-air-conditioners-riyadh.html",
+      "destination": "/buy-used-air-conditioners-riyadh",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "usedac-riyadh.com"
+        }
+      ],
+      "destination": "https://www.usedac-riyadh.com/:path*",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}

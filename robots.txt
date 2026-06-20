@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://freshair-ac.sa/sitemap.xml
+Sitemap: https://www.usedac-riyadh.com/sitemap.xml

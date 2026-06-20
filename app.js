@@ -1,5 +1,6 @@
-﻿const pages = [
+const pages = [
   ["index.html", "الرئيسية"],
+  ["/buy-used-air-conditioners-riyadh", "شراء المكيفات"],
   ["about.html", "من نحن"],
   ["services.html", "الخدمات"],
   ["products.html", "التكييفات"],
@@ -24,10 +25,10 @@ const iconPaths = {
 
 const svgIcon = (name) => `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${iconPaths[name] || iconPaths.star}</svg>`;
 
-function freshAirLogo(className = "brand-logo") {
+function alSaqrLogo(className = "brand-logo") {
   const uid = `fa-${className.replace(/[^a-z0-9]/gi, "") || "logo"}`;
   return `
-    <svg class="${className}" viewBox="0 0 430 124" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="فريش إير للمكيفات المستعملة بالرياض">
+    <svg class="${className}" viewBox="0 0 430 124" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="الصقر لشراء مكيفات مستعملة بالرياض">
       <defs>
         <linearGradient id="${uid}-mark" x1="18" y1="14" x2="122" y2="108" gradientUnits="userSpaceOnUse">
           <stop stop-color="#84F8FF"/>
@@ -54,18 +55,16 @@ function freshAirLogo(className = "brand-logo") {
         </filter>
       </defs>
       <g class="logo-symbol" filter="url(#${uid}-glow)">
-        <path class="logo-orbit" d="M70 15c29.8 0 54 24.2 54 54 0 13.4-4.9 25.8-13.1 35.3" stroke="url(#${uid}-mark)" stroke-width="9.5" stroke-linecap="round"/>
-        <path class="logo-orbit" d="M32.7 104.3A54 54 0 0 1 70 15" stroke="url(#${uid}-mark)" stroke-width="9.5" stroke-linecap="round"/>
-        <path class="logo-windline" d="M22 52c17.7-17.1 39.9-19.1 62.9-3.1 16.1 11.2 32.7 13.2 50.4 1.8-13.2 22.5-37 30.7-60.5 18.8C57.1 60.5 43.6 50.4 22 52Z" fill="url(#${uid}-wind)" opacity=".98"/>
-        <path class="logo-windline" d="M17 73.8c20.2-14.5 42.3-15.1 64.4 0 17.1 11.7 33.9 12.5 52.5.9-15.2 21.6-39.8 29.3-63.6 17C51.7 82 39.1 72.2 17 73.8Z" fill="url(#${uid}-wind)" opacity=".78"/>
-        <path d="M44 40h50M70 19.5v51M50.2 29.2l39.6 39.6M89.8 29.2 50.2 68.8" stroke="#082437" stroke-width="4.4" stroke-linecap="round" opacity=".58"/>
-        <path d="M44 40h50M70 19.5v51M50.2 29.2l39.6 39.6M89.8 29.2 50.2 68.8" stroke="#F8FFFF" stroke-width="2.45" stroke-linecap="round" opacity=".9"/>
-        <circle class="logo-spark" cx="118" cy="29" r="3.5" fill="#8EE23F"/>
-        <circle class="logo-spark" cx="132" cy="39" r="2.5" fill="#84F8FF"/>
+        <path d="M128 31c-30-12-67-7-101 18 28-3 50 4 68 20-25-2-51 5-77 23 42 2 79-6 105-25 12-9 20-20 24-35-6 2-12 2-19-1Z" fill="url(#${uid}-wind)" opacity=".98"/>
+        <path d="M35 51c34 2 62 13 87 36" stroke="#F8FFFF" stroke-width="4" stroke-linecap="round" opacity=".82"/>
+        <path d="M105 35l27-18-9 29 24-12c-9 18-24 30-45 38 9-13 11-25 3-37Z" fill="url(#${uid}-mark)"/>
+        <path d="M113 34l13-7-5 13 13-5" stroke="#082437" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity=".48"/>
+        <circle class="logo-spark" cx="118" cy="33" r="3.2" fill="#082437"/>
+        <path d="M22 93c31 4 64-1 94-16" stroke="url(#${uid}-mark)" stroke-width="5" stroke-linecap="round" opacity=".82"/>
       </g>
       <g class="logo-copy" filter="url(#${uid}-textGlow)">
-        <text class="logo-wordmark logo-wordmark-ar" x="408" y="52" direction="rtl" text-anchor="end">فريش إير</text>
-        <text class="logo-tagline" x="408" y="82" direction="rtl" text-anchor="end">للمكيفات المستعملة بالرياض</text>
+        <text class="logo-wordmark logo-wordmark-ar" x="398" y="54" direction="rtl" text-anchor="end">الصقر</text>
+        <text class="logo-tagline" x="398" y="82" direction="rtl" text-anchor="end">شراء مكيفات مستعملة بالرياض</text>
         <path class="logo-rule logo-rule-green" d="M214 98h98"/>
         <path class="logo-rule logo-rule-blue" d="M324 98h54"/>
       </g>
@@ -73,7 +72,7 @@ function freshAirLogo(className = "brand-logo") {
   `;
 }
 
-function freshAirMark(className = "brand-mark-logo") {
+function alSaqrMark(className = "brand-mark-logo") {
   const uid = `fa-${className.replace(/[^a-z0-9]/gi, "") || "mark"}`;
   return `
     <svg class="${className}" viewBox="0 0 144 124" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -94,14 +93,12 @@ function freshAirMark(className = "brand-mark-logo") {
         </filter>
       </defs>
       <g class="logo-symbol" filter="url(#${uid}-glow)">
-        <path class="logo-orbit" d="M70 15c29.8 0 54 24.2 54 54 0 13.4-4.9 25.8-13.1 35.3" stroke="url(#${uid}-mark)" stroke-width="9.5" stroke-linecap="round"/>
-        <path class="logo-orbit" d="M32.7 104.3A54 54 0 0 1 70 15" stroke="url(#${uid}-mark)" stroke-width="9.5" stroke-linecap="round"/>
-        <path class="logo-windline" d="M22 52c17.7-17.1 39.9-19.1 62.9-3.1 16.1 11.2 32.7 13.2 50.4 1.8-13.2 22.5-37 30.7-60.5 18.8C57.1 60.5 43.6 50.4 22 52Z" fill="url(#${uid}-wind)" opacity=".98"/>
-        <path class="logo-windline" d="M17 73.8c20.2-14.5 42.3-15.1 64.4 0 17.1 11.7 33.9 12.5 52.5.9-15.2 21.6-39.8 29.3-63.6 17C51.7 82 39.1 72.2 17 73.8Z" fill="url(#${uid}-wind)" opacity=".78"/>
-        <path d="M44 40h50M70 19.5v51M50.2 29.2l39.6 39.6M89.8 29.2 50.2 68.8" stroke="#082437" stroke-width="4.4" stroke-linecap="round" opacity=".58"/>
-        <path d="M44 40h50M70 19.5v51M50.2 29.2l39.6 39.6M89.8 29.2 50.2 68.8" stroke="#F8FFFF" stroke-width="2.45" stroke-linecap="round" opacity=".9"/>
-        <circle class="logo-spark" cx="118" cy="29" r="3.5" fill="#8EE23F"/>
-        <circle class="logo-spark" cx="132" cy="39" r="2.5" fill="#84F8FF"/>
+        <path d="M128 31c-30-12-67-7-101 18 28-3 50 4 68 20-25-2-51 5-77 23 42 2 79-6 105-25 12-9 20-20 24-35-6 2-12 2-19-1Z" fill="url(#${uid}-wind)" opacity=".98"/>
+        <path d="M35 51c34 2 62 13 87 36" stroke="#F8FFFF" stroke-width="4" stroke-linecap="round" opacity=".82"/>
+        <path d="M105 35l27-18-9 29 24-12c-9 18-24 30-45 38 9-13 11-25 3-37Z" fill="url(#${uid}-mark)"/>
+        <path d="M113 34l13-7-5 13 13-5" stroke="#082437" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round" opacity=".48"/>
+        <circle class="logo-spark" cx="118" cy="33" r="3.2" fill="#082437"/>
+        <path d="M22 93c31 4 64-1 94-16" stroke="url(#${uid}-mark)" stroke-width="5" stroke-linecap="round" opacity=".82"/>
       </g>
     </svg>
   `;
@@ -109,13 +106,11 @@ function freshAirMark(className = "brand-mark-logo") {
 
 function initShell() {
   document.body.insertAdjacentHTML("afterbegin", `
-    <div class="loader"><div class="loader-mark"><span>F</span></div></div>
-    <div class="page-transition"></div>
     <header class="nav">
       <div class="nav-inner">
-        <a class="brand" href="index.html" aria-label="Fresh air">
-          <span class="brand-full">${freshAirLogo("brand-logo")}</span>
-          <span class="brand-compact">${freshAirMark("brand-mark-logo")}<span>فريش إير</span></span>
+        <a class="brand" href="index.html" aria-label="الصقر">
+          <span class="brand-full">${alSaqrLogo("brand-logo")}</span>
+          <span class="brand-compact">${alSaqrMark("brand-mark-logo")}<span>الصقر</span></span>
         </a>
         <nav class="nav-links" aria-label="التنقل الرئيسي">
           ${pages.map(([href, label]) => `<a href="${href}">${label}</a>`).join("")}
@@ -127,24 +122,26 @@ function initShell() {
       </div>
     </header>
     <div class="quick-contact" aria-label="تواصل سريع">
-      <a class="whatsapp" href="https://wa.me/966556800314?text=${encodeURIComponent("أريد التواصل مع Fresh air بخصوص المكيفات المستعملة بالرياض")}" aria-label="واتساب">${svgIcon("whatsapp")}</a>
+      <a class="whatsapp" href="https://wa.me/966556800314?text=${encodeURIComponent("أريد التواصل مع الصقر بخصوص شراء مكيفات مستعملة بالرياض")}" aria-label="واتساب">${svgIcon("whatsapp")}</a>
       <a class="call-now" href="tel:+966556800314">اتصل الآن</a>
     </div>
   `);
 
-  const current = location.pathname.split("/").pop() || "index.html";
+  const currentPath = location.pathname.replace(/^\/+/, "").replace(/\/+$/, "");
+  const current = currentPath || "index.html";
   document.querySelectorAll(".nav-links a").forEach((link) => {
-    if (link.getAttribute("href") === current) link.classList.add("active");
+    const href = link.getAttribute("href").replace(/^\/+/, "").replace(/\/+$/, "");
+    if (href === current) link.classList.add("active");
   });
 
-  const savedTheme = localStorage.getItem("freshair-theme");
+  const savedTheme = localStorage.getItem("alsaqr-theme");
   if (savedTheme === "light") document.documentElement.classList.add("light");
   const themeBtn = document.querySelector(".theme-toggle");
   const setThemeIcon = () => themeBtn.innerHTML = svgIcon(document.documentElement.classList.contains("light") ? "sun" : "moon");
   setThemeIcon();
   themeBtn.addEventListener("click", () => {
     document.documentElement.classList.toggle("light");
-    localStorage.setItem("freshair-theme", document.documentElement.classList.contains("light") ? "light" : "dark");
+    localStorage.setItem("alsaqr-theme", document.documentElement.classList.contains("light") ? "light" : "dark");
     setThemeIcon();
   });
 
@@ -159,63 +156,37 @@ function initShell() {
   onScroll();
   addEventListener("scroll", onScroll, { passive: true });
 
-  addEventListener("load", () => {
-    setTimeout(() => document.querySelector(".loader").classList.add("hide"), 450);
-  });
-
   document.querySelectorAll("a[href$='.html']").forEach((link) => {
-    link.addEventListener("click", (event) => {
-      const href = link.getAttribute("href");
-      if (link.target || href === current) return;
-      event.preventDefault();
-      const transition = document.querySelector(".page-transition");
-      transition.classList.add("active");
-      setTimeout(() => location.href = href, 350);
-    });
+    const href = link.getAttribute("href");
+    if (href === current) link.setAttribute("aria-current", "page");
+  });
+  document.querySelectorAll(".nav-links a").forEach((link) => {
+    const href = link.getAttribute("href").replace(/^\/+/, "").replace(/\/+$/, "");
+    if (href === current) link.setAttribute("aria-current", "page");
   });
 }
 
 function initReveals() {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: .14 });
-  document.querySelectorAll(".reveal, .card, .stat").forEach((el, i) => {
-    el.style.transitionDelay = `${Math.min(i % 8, 6) * 55}ms`;
-    observer.observe(el);
-  });
+  document.querySelectorAll(".reveal, .card, .stat").forEach((el) => el.classList.add("visible"));
 }
 
 function initCounters() {
-  const counters = document.querySelectorAll("[data-count]");
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
-      const el = entry.target;
-      const target = Number(el.dataset.count);
-      const prefix = el.dataset.prefix || "";
-      const suffix = el.dataset.suffix || "";
-      const start = performance.now();
-      const duration = 1600;
-      const tick = (now) => {
-        const progress = Math.min((now - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = `${prefix}${Math.round(target * eased).toLocaleString("ar-SA")}${suffix}`;
-        if (progress < 1) requestAnimationFrame(tick);
-      };
-      requestAnimationFrame(tick);
-      observer.unobserve(el);
-    });
-  }, { threshold: .35 });
-  counters.forEach((counter) => observer.observe(counter));
+  document.querySelectorAll("[data-count]").forEach((el) => {
+    const target = Number(el.dataset.count);
+    const prefix = el.dataset.prefix || "";
+    const suffix = el.dataset.suffix || "";
+    el.textContent = `${prefix}${target.toLocaleString("ar-SA")}${suffix}`;
+  });
 }
 
 function initCarousel(selector = "[data-carousel]") {
   document.querySelectorAll(selector).forEach((carousel) => {
+    if (matchMedia("(max-width: 768px)").matches) {
+      carousel.hidden = true;
+      carousel.innerHTML = "";
+      return;
+    }
+
     const slides = JSON.parse(carousel.dataset.slides || "[]");
     if (!slides.length) return;
     let index = 0;
@@ -228,7 +199,7 @@ function initCarousel(selector = "[data-carousel]") {
       slide.style.backgroundImage = `url('${item.image}')`;
       slide.setAttribute("role", "img");
       slide.setAttribute("aria-label", `${item.title} - ${item.text}`);
-      slide.innerHTML = `<span class="eyebrow">${item.tag}</span><h3>${item.title}</h3><p>${item.text}</p>`;
+      slide.innerHTML = `<span class="eyebrow">${item.tag}</span><h2>${item.title}</h2><p>${item.text}</p>`;
       dots.querySelectorAll("button").forEach((dot, i) => dot.classList.toggle("active", i === index));
     };
     dots.querySelectorAll("button").forEach((dot, i) => dot.addEventListener("click", () => {
@@ -236,10 +207,6 @@ function initCarousel(selector = "[data-carousel]") {
       render();
     }));
     render();
-    setInterval(() => {
-      index = (index + 1) % slides.length;
-      render();
-    }, 4200);
   });
 }
 
@@ -294,8 +261,8 @@ function initWhatsappForm() {
       return;
     }
     const message = [
-      "السلام عليكم Fresh air",
-      "حجزك كان من موقع Fresh air للمكيفات.",
+      "السلام عليكم الصقر",
+      "حجزك كان من موقع الصقر للمكيفات.",
       `الاسم: ${name}`,
       `رقم الجوال: ${phone}`,
       `نوع الخدمة: ${service}`,
@@ -321,11 +288,11 @@ function initProductDetail() {
   const product = products[id] || products["split-24"];
   target.innerHTML = `
     <div class="split">
-      <div class="media-frame" role="img" aria-label="${product[0]} من Fresh air" style="background-image:url('${product[3]}')"></div>
+      <div class="media-frame" role="img" aria-label="${product[0]} من الصقر" style="background-image:url('${product[3]}')"></div>
       <div>
         <span class="eyebrow">تفاصيل المنتج</span>
         <h1>${product[0]}</h1>
-        <p class="lead">${product[1]} يشمل السعر المعاينة الفنية والتوصيل داخل الرياض حسب الحي، مع إمكانية الفك والتركيب بواسطة فريق Fresh air.</p>
+        <p class="lead">${product[1]} يشمل السعر المعاينة الفنية والتوصيل داخل الرياض حسب الحي، مع إمكانية الفك والتركيب بواسطة فريق الصقر.</p>
         <p class="price">${product[2]}</p>
         <div class="inline-actions">
           <a class="btn primary" href="tel:+966556800314">${svgIcon("phone")} اتصل الآن</a>

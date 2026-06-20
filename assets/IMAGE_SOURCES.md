@@ -19,5 +19,5 @@
 - `armaflex.jpg`: `Air conditioner armaflex insulation.jpg`
 - `packaged-terminal.jpg`: `Packaged terminal air conditioner.jpg`
 
-ملاحظة: الأفضل عند إطلاق الموقع النهائي استبدال هذه الصور بصور حقيقية من أعمال شركة فريش إير داخل الرياض.
+ملاحظة: الأفضل عند إطلاق الموقع النهائي استبدال هذه الصور بصور حقيقية من أعمال شركة الصقر داخل الرياض.
 

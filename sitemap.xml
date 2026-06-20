@@ -1,38 +1,43 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://usedac-riyadh.com/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <loc>https://www.usedac-riyadh.com/</loc>
+    <lastmod>2026-06-17</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://usedac-riyadh.com/about.html</loc>
-    <lastmod>2026-05-23</lastmod>
+    <loc>https://www.usedac-riyadh.com/buy-used-air-conditioners-riyadh</loc>
+    <lastmod>2026-06-17</lastmod>
+    <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>https://www.usedac-riyadh.com/about.html</loc>
+    <lastmod>2026-06-04</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://usedac-riyadh.com/services.html</loc>
-    <lastmod>2026-05-23</lastmod>
+    <loc>https://www.usedac-riyadh.com/services.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.usedac-riyadh.com/products.html</loc>
+    <lastmod>2026-06-04</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://usedac-riyadh.com/products.html</loc>
-    <lastmod>2026-05-23</lastmod>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://usedac-riyadh.com/gallery.html</loc>
-    <lastmod>2026-05-23</lastmod>
+    <loc>https://www.usedac-riyadh.com/gallery.html</loc>
+    <lastmod>2026-06-04</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://usedac-riyadh.com/reviews.html</loc>
-    <lastmod>2026-05-23</lastmod>
+    <loc>https://www.usedac-riyadh.com/reviews.html</loc>
+    <lastmod>2026-06-04</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://usedac-riyadh.com/contact.html</loc>
-    <lastmod>2026-05-23</lastmod>
-    <priority>0.8</priority>
+    <loc>https://www.usedac-riyadh.com/contact.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.85</priority>
   </url>
 </urlset>
